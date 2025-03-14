@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
+import MainNavbar from "./shared/MainNavbar";
 
 export default function App() {
   return (
-    <div>
-      <h1>My App</h1>
+    <section className="px-10">
+      <MainNavbar/>
       <Outlet />
-    </div>
+    </section>
   );
 }
