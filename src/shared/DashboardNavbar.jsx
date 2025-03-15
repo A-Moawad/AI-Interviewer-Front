@@ -11,7 +11,7 @@ function DashboardNavbar() {
           <h2 className="text-2xl font-bold">AI Interniewer</h2>
         </figure>
         <nav className="flex gap-4">
-          <Link to="/" className="hover:text-gray-400">
+          <Link to="/dashboard" className="hover:text-gray-400">
             Dashboard
           </Link>
           <Link to="/practice" className="hover:text-gray-400">

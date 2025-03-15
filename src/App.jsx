@@ -5,8 +5,6 @@ import DashboardNavbar from "./shared/DashboardNavbar";
 export default function App() {
   return (
     <section className="">
-      {/* <MainNavbar/> */}
-      <DashboardNavbar />
       <div className="px-10">
       <Outlet  />
       </div>
