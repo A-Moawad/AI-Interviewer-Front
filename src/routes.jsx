@@ -10,6 +10,7 @@ const router = createBrowserRouter([
     element: <App />, // This is your main layout or wrapper
     children: [
       { path: "", element: <HomePage /> }, // Default route
+      { path: "practice", element: <Practice /> },
       { path: "*", element: <NotFound /> },
     ],
   },

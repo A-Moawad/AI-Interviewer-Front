@@ -8,7 +8,7 @@ function DashboardNavbar() {
       {/* Left Section */}
       <section className="flex gap-6 items-center">
         <figure >
-          <h2 className="text-2xl font-bold">AI Interniewer</h2>
+          <h2 className="text-2xl font-bold">AI Interviewer</h2>
         </figure>
         <nav className="flex gap-4">
           <Link to="/" className="hover:text-gray-400">

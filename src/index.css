@@ -5,3 +5,9 @@ body {
   background-color: rgba(0, 0, 0, 1);
   color: white;
 }
+.response button{
+  @apply text-white text-center w-1/2 py-1 cursor-pointer
+} 
+.summary h3{
+  @apply flex items-center gap-2
+}
