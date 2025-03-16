@@ -7,13 +7,21 @@ function InterviewCategories() {
 
   const categories = ["all", "behavioral", "technical", "situational"];
 
+  // Get one category per type when "all" is selected
+  const uniqueCategories = Object.values(
+    interviewCategoriesList.reduce((acc, category) => {
+      acc[category.type] = category; // Store only one item per type
+      return acc;
+    }, {})
+  );
+
   // Filter interview categories based on selection
   const filteredCategories =
     selectedCategory === "all"
-      ? interviewCategoriesList
-      : interviewCategoriesList.filter(
-          (category) => category.type === selectedCategory
-        );
+      ? uniqueCategories // Show only one per type
+      : interviewCategoriesList
+          .filter((category) => category.type === selectedCategory)
+          .slice(0, 1);
 
   return (
     <div className="flex flex-col gap-4">
