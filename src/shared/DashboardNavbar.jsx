@@ -26,7 +26,7 @@ function DashboardNavbar() {
         </Link>
       </nav>
 
-      {/* Right Section - Notifications & Avatar (Always Visible) */}
+      {/* Right Section - Notifications & Avatar */}
       <div className="flex items-center gap-4">
         <IoMdNotificationsOutline
           size={24}
@@ -49,34 +49,32 @@ function DashboardNavbar() {
         </button>
       </div>
 
-      {/* Mobile Navigation Menu (Excluding Avatar & Notifications) */}
-      <nav
-        className={`absolute top-16 left-0 w-full bg-gray-900 text-white flex flex-col gap-4 py-4 px-6 md:hidden z-50 transition-all ${
-          isMenuOpen ? "block" : "hidden"
-        }`}
-      >
-        <Link
-          to="/dashboard"
-          className="hover:text-gray-400"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Dashboard
-        </Link>
-        <Link
-          to="/practice"
-          className="hover:text-gray-400"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Practice
-        </Link>
-        <Link
-          to="/history"
-          className="hover:text-gray-400"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          History
-        </Link>
-      </nav>
+      {/* Mobile Navigation Menu */}
+      {isMenuOpen && (
+        <nav className="absolute top-16 left-0 w-full bg-gray-900 text-white flex flex-col gap-4 py-4 px-6 md:hidden z-50">
+          <Link
+            to="/dashboard"
+            className="hover:text-gray-400"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Dashboard
+          </Link>
+          <Link
+            to="/practice"
+            className="hover:text-gray-400"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Practice
+          </Link>
+          <Link
+            to="/history"
+            className="hover:text-gray-400"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            History
+          </Link>
+        </nav>
+      )}
     </header>
   );
 }
