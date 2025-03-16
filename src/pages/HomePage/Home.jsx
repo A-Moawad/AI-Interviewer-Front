@@ -6,7 +6,6 @@ import Achievments from "./components/Achievments";
 import Features from "./components/Features";
 import Practice from "./components/Practice";
 import Testimonials from "./components/Testimonials";
-import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 
 function HomePage() {
@@ -19,7 +18,6 @@ function HomePage() {
         <Features />
         <Practice/>
         <Testimonials/>
-        <Pricing />
         <Footer/>
       </div>
     </div>
