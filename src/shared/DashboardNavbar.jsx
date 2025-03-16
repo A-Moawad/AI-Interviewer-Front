@@ -4,7 +4,7 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 
 function DashboardNavbar() {
   return (
-    <header className="flex justify-between items-center py-3  text-white border-b-1 border-gray-700 px-10">
+    <header className="flex justify-between items-center py-3  text-white border-b-1 border-gray-700 px-11">
       {/* Left Section */}
       <section className="flex gap-6 items-center">
         <figure >

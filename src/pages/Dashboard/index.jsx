@@ -10,10 +10,10 @@ function Dashboard() {
   return (
     <div>
       <DashboardNavbar />
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 px-11 ">
         <Hero />
         <div className="flex gap-5 ">
-          <div className="flex flex-col gap-5 w-full  lg:w-[75%] border-1 border-gray-700 p-3 ">
+          <div className="flex flex-col gap-5 w-full  lg:w-[75%] border-1 border-gray-700 rounded-lg p-6 ">
             <InterviewQuestion />
             <JobTitle />
             <InterviewCategories />
