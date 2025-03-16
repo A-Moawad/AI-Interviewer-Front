@@ -1,9 +1,28 @@
-import React from 'react';
+import React from "react";
+import DashboardNavbar from "../../shared/DashboardNavbar";
+import Hero from "./components/Hero";
+import InterviewQuestion from "./components/InterviewQuestion";
+import JobTitle from "./components/JobTitle";
+import RecentSessions from "./components/RecentSessions";
+import InterviewCategories from "./components/InterviewCategories";
 
 function Dashboard() {
   return (
     <div>
-      Dashboard
+      <DashboardNavbar />
+      <div className="flex flex-col gap-10 px-11 ">
+        <Hero />
+        <div className="flex gap-5 ">
+          <div className="flex flex-col gap-5 w-full  lg:w-[75%] border-1 border-gray-700 rounded-lg p-6 ">
+            <InterviewQuestion />
+            <JobTitle />
+            <InterviewCategories />
+          </div>
+          <div className="hidden lg:block">
+            <RecentSessions />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
