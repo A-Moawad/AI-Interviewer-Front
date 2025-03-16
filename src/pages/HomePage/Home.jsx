@@ -19,7 +19,7 @@ function HomePage() {
         <Features />
         <Practice/>
         <Testimonials/>
-        <Pricing />
+        {/* <Pricing /> */}
         <Footer/>
       </div>
     </div>
