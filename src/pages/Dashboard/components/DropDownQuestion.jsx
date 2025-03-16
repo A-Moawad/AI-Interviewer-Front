@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+
 
 function DropDownQuestion({ question, answer, level, type }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,10 +53,10 @@ function DropDownQuestion({ question, answer, level, type }) {
             {/* Practice Similar Link */}
             <Link
               to="/practice-similar"
-              className="flex gap-2 border border-gray-700 px-4 py-2"
+              className="flex  items-center gap-2 border border-gray-700 px-4 py-2"
             >
               <p>Practice Similar</p>
-              <img src="/right-arrow.png" alt="right arrow" />
+              <FaArrowRight  className="text-xs"/>
             </Link>
           </div>
         </div>
