@@ -12,8 +12,8 @@ function Feature({ title, description, feat1, feat2, feat3, icon }) {
       )}
 
       {/* Content */}
-      <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="text-gray-400 mt-2">{description}</p>
+      <h3 className="text-xl md:text-2xl font-semibold">{title}</h3>
+      <p className="text-xs md:text-sm text-gray-400 mt-2">{description}</p>
       <ul className="mt-4 text-gray-300 list-disc list-inside">
         <li>{feat1}</li>
         <li>{feat2}</li>
