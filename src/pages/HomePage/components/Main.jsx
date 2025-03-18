@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 function Main() {
   return (
@@ -13,9 +12,13 @@ function Main() {
         <p className="text-sm border-1 border-gray-700 rounded-full py-1 px-3 w-fit">
           AI-Powered Interview Preparation
         </p>
-        <h1 className="text-2xl md:text-3xl lg:text-6xl">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl">
           Ace Your Next Interview with AI Coaching
         </h1>
+        <p className="text-gray-500 text-sm lg:text-base">
+          Practice with personalized interview questions, get real-time
+          feedback, and track your progress to land your dream job.
+        </p>
         <div className="flex gap-3">
           <Link
             to="/dashboard"
