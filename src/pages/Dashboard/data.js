@@ -97,3 +97,4 @@ export const interviewCategoriesList = [
     icon: "RiBrainLine",
   })),
 ];
+

@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <div className="flex flex-col">
       <MainNavbar />
-      <div className="flex gap-10 px-16 py-40 flex-col">
+      <div className="flex    flex-col">
         <Main />
         <Achievments />
         <Features />

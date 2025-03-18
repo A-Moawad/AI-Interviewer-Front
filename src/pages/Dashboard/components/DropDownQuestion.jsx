@@ -8,6 +8,7 @@ function DropDownQuestion({ question, answer, level, type }) {
 
   return (
     <div className="flex flex-col gap-3 border-b border-gray-800 p-3 rounded-lg shadow-sm transition-all duration-300">
+
       <div className="flex gap-4 text-xs md:text-sm">
         <p
           className={`border rounded-full py-1 px-2 transition-all duration-300 ${
@@ -23,7 +24,7 @@ function DropDownQuestion({ question, answer, level, type }) {
         className="flex gap-5 justify-between items-center cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h4 className="md:text-lg font-semibold">{question}</h4>
+        <h4 className=" text-sm md:text-lg font-semibold">{question}</h4>
         <span className="text-sm text-gray-500">{isOpen ? "▲" : "▼"}</span>
       </div>
 

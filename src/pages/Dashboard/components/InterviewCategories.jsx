@@ -27,14 +27,14 @@ function InterviewCategories() {
     <div className="flex flex-col gap-4">
       {/* Heading Section */}
       <div>
-        <h2 className="text-lg font-bold">Interview Categories</h2>
-        <p className="text-gray-500">
+        <h2 className="text-lg md:text-xl font-bold">Interview Categories</h2>
+        <p className="text-sm md:text-base text-gray-500">
           Choose a category to practice specific types of interview questions
         </p>
       </div>
 
       {/* Category Buttons */}
-      <div className="flex gap-2">
+      <div className="flex flex-col md:flex-row gap-2 ">
         {categories.map((category) => (
           <button
             key={category}

@@ -9,7 +9,7 @@ function InterviewQuestion() {
     <div className="p-6 rounded-lg shadow-md text-white ">
       <div>
         {/* Header Section */}
-        <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-center">
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-between items-start sm:items-center">
           <div>
             <h3 className="text-lg lg:text-2xl font-bold">
               Personalized Interview Questions
@@ -22,7 +22,7 @@ function InterviewQuestion() {
             </span>
           </div>
           {/* Refresh Button */}
-          <button className="flex gap-2 border border-gray-700 py-2 px-4 rounded-md cursor-pointer hover:bg-gray-700 transition-all">
+          <button className="flex gap-2 border items-center border-gray-700 py-2 px-4 rounded-md cursor-pointer hover:bg-gray-700 transition-all">
             <FiRefreshCcw />
             <span className="text-xs lg:text-base">Refresh Questions</span>
           </button>
