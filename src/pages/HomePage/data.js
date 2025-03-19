@@ -68,7 +68,7 @@ export const cardsUI = [
     btn: "Get Started",
     title2: "$0",
     subTitle: "Get started with basic practice",
-    children: '<p className="text-gray-400">/month</p>',
+    children: '/month',
     features: [
       "5 practice sessions per month",
       "Basic AI feedback",
@@ -80,7 +80,7 @@ export const cardsUI = [
     title2: "$15",
     btn: "Practice Now",
     subTitle: "For serious job seekers",
-    children: '<p className="text-gray-400">/month</p>',
+    children: '/month',
     features: [
       "Unlimited practice sessions",
       "Advanced AI feedback",
