@@ -11,3 +11,6 @@ body {
 .summary h3{
   @apply flex items-center gap-2
 }
+.test{
+  background : #1c2833
+}
