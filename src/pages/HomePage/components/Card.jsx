@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 export default function Card({props}) {
     const {title , subTitle , title2 , children , features , btn} = props
   return (
-    <div className='border-2 border-gray-400 hover:border-white hover:border-4 rounded-md py-3 px-4'>
+    <div className='w-full border-1 border-gray-700 hover:border-white hover:border-1 rounded-lg p-4 '>
       <h2 className='text-white'>{title}</h2>
       <p  className='text-gray-400'>{subTitle}</p>
       <div className='flex items-end py-4'>
